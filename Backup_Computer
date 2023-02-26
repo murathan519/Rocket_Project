@@ -3,7 +3,7 @@ Mission of the backup rocket payload:
 1)Getting sensor data from its own sensors.
 2)Converting the raw data into data packets.
 3)Adding the old data packets to the new data packet until its count reaches the defined limit.
-4)Sending the data packets all together to the main computer in every second.
+4)Sending the data packets all together to the primary computer in every second.
 5)Detecting the flight levels in order to execute the separations at the right time.
 6)Saving the data into SD card.
 7)Ringing the buzzer when it lands for the recovery.
@@ -155,7 +155,7 @@ void loop()
   
       GPS_second = gps.time.second();
       GPS_minute = gps.time.minute();
-      GPS_hour = gps.time.hour()+3;          //add 3 hours to synchronize the time with Turkey
+      GPS_hour = gps.time.hour()+3;          //add 3 hours to synchronize the time with Turkiye
     }
   }
   
